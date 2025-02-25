@@ -10,10 +10,11 @@
   "scripts": {
     "build": "tsc",
     "prepare": "npm run build",
-    "test": "npm run prepare && mocha"
+    "test": "npm run prepare && mocha",
+    "postinstall": "npm run build"    
   },
   "dependencies": {
-    "typescript": "^5.0.3"
+    "typescript": "5.0.3"
   },
   "devDependencies": {
     "@types/node": "^6.0.111",
